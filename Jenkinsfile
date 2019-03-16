@@ -16,3 +16,18 @@ node {
         echo "deploying"
     }
 }
+node {
+    stage('deploy to UAT'){
+        echo "testing"
+    }
+}
+node {
+    stage('get approval'){
+        echo "Deploy to UAT?"
+    }
+}
+node {
+    stage('deploy to qa'){
+        echo "deploying"
+    }
+}
